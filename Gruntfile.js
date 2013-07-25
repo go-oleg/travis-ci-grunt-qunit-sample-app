@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-    // Project configuration.
     grunt.initConfig({
         qunit: {
             files: ['tests/index.html']
@@ -7,6 +6,6 @@ module.exports = function(grunt) {
     });
 
 		grunt.loadNpmTasks("grunt-contrib-qunit");
-    // Task to run tests
+
     grunt.registerTask('test', 'qunit');
 };
